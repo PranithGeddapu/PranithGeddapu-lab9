@@ -31,6 +31,12 @@ while state == 1:
     if option == "3":
 
         state = 0
+def decode(encoded_password):
+    decoded_passwordList = []
+    for i in range (0, len(encoded_password)):
+        decoded_passwordList.append(int(encoded_password[i])-3)
+        decoded_passwordList[i] = (str(decoded_passwordList[i]))
+    return ''.join(decoded_passwordList)
 
 
 
